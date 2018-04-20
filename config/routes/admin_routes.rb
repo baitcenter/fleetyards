@@ -5,6 +5,14 @@ namespace :admin, path: (ENV['ON_SUBDOMAIN'] ? 'admin' : ''), constraints: ->(re
 
   devise_for :users, skip: %i[registration]
 
+  resource :me, controller: :current_user, only: [] do
+    get :otp
+    get :otp_qrcode
+    post :otp_backup_codes
+    post :enable_otp
+    post :disable_otp
+  end
+
   resource :password, only: %i[edit update]
 
   resources :users, except: [:show]

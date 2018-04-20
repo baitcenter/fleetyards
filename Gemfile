@@ -34,8 +34,10 @@ gem 'premailer-rails'
 
 gem 'cancancan'
 gem 'devise'
+gem 'devise-two-factor'
 gem 'jwt'
 gem 'useragent'
+gem 'rqrcode-rails3'
 
 gem 'ransack'
 

@@ -98,6 +98,9 @@ en:
       sign-up: Sign Up
       password_request: Request Password
       password_change: Change Password
+    otp: 2-Factor-Auth
+    devise:
+      otp: 2-Factor-Authentication
     admin: FleetYards.net Backend
     component:
       edit: Edit Component
